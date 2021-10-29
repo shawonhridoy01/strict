@@ -1,0 +1,357 @@
+/* global css start here  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+h1{
+    font-size: 100px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 22px;
+}
+p{
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.row{
+    width: 1140px;
+    margin: 0 auto;
+}
+/* global css end here  */
+
+/* nav css start here  */
+header{
+    padding: 25px 0 10px 0;
+    height: 89px;
+}
+nav{
+    
+}
+.logo{
+    width: 170px;
+    float: left;
+
+}
+.logo img{
+    height: 100%;
+}
+.menu{
+    float: right;
+    margin-top: 12px;
+}
+.menu li{
+        display: inline-block;
+        margin-left: 27px;
+}
+.menu li:first-child{
+    margin-left: 0;
+}
+.menu li a{
+    color: #15a4fa;
+    transition: 0.4s ease;
+    font-weight: 500;
+}
+.menu li a:hover{
+    color: #2d3950;
+}
+/* banner section start from here  */
+
+#banner{
+    background-image: url("../images/back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0;
+    
+
+}
+
+.content{
+    
+    text-align: center;
+}
+.content h1{
+    position: relative;
+    margin-bottom: 20px;
+}
+.content h1::after{
+    content: "";
+    width: 615px;
+    height: 2px;
+    background-color: #15a4fa;
+    position: absolute;
+    top: 111px;
+    left: -140px;
+
+}
+.content p{
+    font-size: 20px;
+    color: #ffffff;
+}
+.content p span{
+    text-transform: uppercase;
+}
+.btn{
+    padding: 13px 36px;
+    border: 2px solid #15a4fa;
+    color: #ffffff;
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+    transition:.5s ease;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.content .btn{
+
+    margin-top: 40px;
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+    transition:.5s ease;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #15a4fa;
+
+}
+/* service section start here.  */
+#service{
+    text-align: center;
+}
+.service{
+    margin-top: 50px;
+    background-color: #f6f9f9;
+    padding: 40px 0;
+}
+.service h2{
+    color: #2d3950;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+.little-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 27px;
+}
+.service p{
+
+    width: 850px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
+}
+
+#main-service{
+    overflow: hidden;
+    margin-top: 45px;
+    text-align: center;
+}
+#main-service img{
+    background-color: #15a4fa;
+    padding: 20px 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#main-service h3{
+    font-size: 18px;
+    color: #2d3950;
+    margin:10px 0 ;
+}
+.service-col {
+    width: 30%;
+    margin-left: 2.5%;
+    padding: 30px 0;
+    transition: 0.4s ease;
+}
+.service-col:hover{
+        background: aqua;
+        color: #111;
+        border-radius: 5px;    
+}
+ .service-col:hover .service-col .little-description{
+    color: #000000;
+}
+.service-col:first-child{
+    margin-left: 0;
+}
+#main-service .service-col{
+    float: left;
+}
+#main-service .service-col p{
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* showcase photo */
+#gallery{
+     text-align: center;
+    padding-left: 140px
+}
+#gallery h2{
+    text-align: center;
+}
+#gallery p{
+    text-align: center;
+}
+.main-gallery{
+    overflow: hidden;
+}
+.img-col{
+    float: left;
+    margin-bottom: 20px;
+    width: 320px;
+    margin-right: 20px;
+    position: relative;
+    transition: 0.5s ease;
+    
+    
+}
+.img-col:last-child{
+    margin-right: 0;
+}
+.img-col img{
+    width: 100%;
+    height: auto;
+    display:inline-block;
+}
+
+.hover-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #2d3950;
+    visibility: hidden;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0, 255, 255,0.8);
+}
+.img-col:hover .overlay{
+    opacity: 1;
+
+}
+.img-col:hover .hover-content{
+    visibility: visible;
+}
+.hover-content i.fa,
+.hover-content i.fas{
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+/* form section  */
+
+#form{
+    background-image: url("/images/form-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.form-head{
+    text-align: center;
+}
+#form h2{
+    color: #ffffff;
+}
+form{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    padding: 13px 0;
+    margin-bottom: 15px;
+    background: transparent;
+    border: 1px solid #999999;
+    padding-left: 20px;
+    outline: none;
+}
+textarea{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #999999;
+    padding-left: 20px;
+    padding-top: 20px;
+    outline: none;
+}
+input::placeholder,textarea::placeholder{
+    color: #8b8d8f;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.form-btn{
+    text-align: right;
+    margin-top: 30px;
+}
+
+/* footer  */
+footer{
+    padding: 30px 0;
+    margin-bottom: 30px ;
+
+}
+.left-text{
+    width: 30%;
+    float: left;
+}
+
+.icons ul{
+    list-style-type: none;
+    float: right;
+}
+.icons ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+.icons ul li:first-child{
+    margin-left: 0;
+}
+.icons ul li a{
+    background-color: #15a4fa;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 3px;
+    transition: 0.5s ease;
+    
+}
+.icons ul li a i.fa{
+    background-color: #15a4fa;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 3px;
+}
+.icons ul li a :hover a{
+    transform: rotate(360deg);
+}
