@@ -37,9 +37,7 @@ header{
     padding: 25px 0 10px 0;
     height: 89px;
 }
-nav{
-    
-}
+
 .logo{
     width: 170px;
     float: left;
@@ -128,7 +126,7 @@ nav{
 
 }
 /* service section start here.  */
-#serv
+#service{
     text-align: center;
 }
 .service{
