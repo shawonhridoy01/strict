@@ -128,7 +128,7 @@ nav{
 
 }
 /* service section start here.  */
-#service{
+#serv
     text-align: center;
 }
 .service{
@@ -271,7 +271,7 @@ nav{
 /* form section  */
 
 #form{
-    background-image: url("/images/form-back.jpg");
+    background-image: url("../images/form-back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
